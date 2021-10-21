@@ -1,12 +1,30 @@
 import React from 'react';
-import { useEffect } from 'react';
-import axios
+import { useEffect,useState } from 'react';
+import axios from 'axios'
 const Trainer = () => {
+    const [trainer, setTrainer] = useState([])
+
+
+    const GetTrainer =async()=>{
+     try {
+				const res = await axios.get(`http://localhost:8000/trainer/`);
+				setTrainer(res.data);
+			} catch (error) {
+				console.log(error);
+			}   try {
+            
+        } catch (error) {
+            
+        }
+    }
         useEffect(() => {
-					axios.get('https://localhost:8000');
+					GetTrainer()
 				}, []);
     return (
         <div>
+            {trainer.map(items=>{
+                <h1>{trainer.name}</h1>
+            })}
             
         </div>
     );

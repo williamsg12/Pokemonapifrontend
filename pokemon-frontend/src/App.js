@@ -10,9 +10,9 @@ function App() {
 		<div className='App'>
 			<NavBars />
 
-			<Route component={Home} />
-			<Route component={Trainer} />
-			<Route component={Pokemon} />
+			<Route path='/home' exact component={Home} />
+			<Route path='/trainer'exact component={Trainer} />
+			<Route path='/pokemon'exact component={Pokemon} />
       
 		</div>
 	);

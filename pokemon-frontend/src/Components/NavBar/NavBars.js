@@ -6,7 +6,7 @@ const NavBars = () => {
 	return (
 		<div>
 			<Navbar bg='light' variant='dark' navbar-expand='lg'>
-				<NavLink href='/'>
+				<NavLink href='/home'>
 					<h2>Home</h2>
 				</NavLink>
 				<NavLink href='/trainers'>
