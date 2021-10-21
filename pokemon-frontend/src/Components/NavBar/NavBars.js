@@ -6,13 +6,13 @@ const NavBars = () => {
 	return (
 		<div>
 			<Navbar bg='light' variant='dark' navbar-expand='lg'>
-				<NavLink to='/'>
+				<NavLink href='/'>
 					<h2>Home</h2>
 				</NavLink>
-				<NavLink to='/trainers'>
+				<NavLink href='/trainers'>
 					<h2>Trainer</h2>
 				</NavLink>
-				<NavLink to='/pokemon'>
+				<NavLink href='/pokemon'>
 					<h2>Pokemon</h2>
 				</NavLink>
 				
